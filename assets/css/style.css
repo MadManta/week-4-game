@@ -1,0 +1,52 @@
+body {
+    background-color:#2096c5;
+}
+
+.header {
+    font-size:30pt;
+    font-family:'Times New Roman', Times, serif;
+    background-color:#ffffff;
+}
+
+.information {
+    background-color:orangered;
+}
+
+.guessthenumber {
+    background-color:pink;
+}
+
+.scorecount {
+    background-color:blue;
+}
+
+.crystals {
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#gem1 {
+
+}
+
+#gem2 {
+
+}
+
+#gem3 {
+
+}
+
+#gem4 {
+
+}
+
+.yournumber {
+    background-color:aquamarine;
+}
+
+#yourNumber {
+
+}
+

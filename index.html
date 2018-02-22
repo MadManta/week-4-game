@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRYSTAL COUNTER</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+  
+    <!-- wrapper -->
+    <div class="container mx-auto">
+
+        <!-- game title -->
+        <div class="row">
+            <div class="col-lg-12 header">Gem Collector</div>
+        </div>
+
+        <!-- game information -->
+        <div class="row">
+            <div class="col-lg-12 information">Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game InInformation about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game formation about how to play this game </div>
+        </div>
+
+        <!-- random number and current score cards-->
+        <div class="row">
+            <div class="col-sm-3 guessthenumber">
+                <span id="guessTheNumber">NUMBER TO GUESS</span>
+            </div>
+            <div class="col-sm-3 scorecount">
+                <p>WINS: <span id="wins"></span></p>
+                <p>LOSSES: <span id="losses"></span></p>
+            </div>
+            <div class="col-med-6"></div>
+        </div>
+
+        <!-- interactive crystals -->
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="crystals"><img src="assets/images/gem1.png" class="img-fluid" id="gem1"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystals"><img src="assets/images/gem2.png" class="img-fluid" id="gem2"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystals"><img src="assets/images/gem3.png" class="img-fluid" id="gem3"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="crystals"><img src="assets/images/gem4.png" class="img-fluid" id="gem4"></div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+        <!-- number counter -->
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Your current number guess is...</p>
+                <span id="yourNumber">number</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
