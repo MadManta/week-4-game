@@ -18,25 +18,25 @@ var isRunning = false;
 
 // Function to start game
 
-$("#gem1").on("click", function() {
+$("#gem1").on("click touch", function() {
     yourNumber += number1;
     $("#yourNumber").html(yourNumber);
     guessCheck();
 });
 
-$("#gem2").on("click", function() {
+$("#gem2").on("click touch", function() {
     yourNumber += number2;
     $("#yourNumber").html(yourNumber);
     guessCheck();
 });
 
-$("#gem3").on("click", function() {
+$("#gem3").on("click touch", function() {
     yourNumber += number3;
     $("#yourNumber").html(yourNumber);
     guessCheck();
 });
 
-$("#gem4").on("click", function() {
+$("#gem4").on("click touch", function() {
     yourNumber += number4;
     $("#yourNumber").html(yourNumber);
     guessCheck();
