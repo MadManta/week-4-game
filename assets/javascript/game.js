@@ -100,12 +100,6 @@ function guessCheck() {
     };
 };
 
-document.onkeydown = function(press) {
-    var letter = String.fromCharCode(press.which).toLowerCase();
-      if (letter == "s") {
-        if (isRunning === false) {
-            isRunning = true;
-            start();
-        }
-      }
-    };
+$("#startbtn").on("click touch", function() {
+    $(this).prop("disabled", true);
+});
