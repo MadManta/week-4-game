@@ -4,20 +4,33 @@ body {
 
 .header {
     font-size:30pt;
-    font-family:'Times New Roman', Times, serif;
-    background-color:#ffffff;
+    font-family:'Arial Narrow', 'Arial', 'Sans-Serif';
+    background-color: rgb(107, 209, 240);
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align:center;
+    letter-spacing:2pt;
 }
 
 .information {
-    background-color:orangered;
+    background-color:#ffffff;
+    border: 1px solid #000000;
+    background-image: url(../images/regal.png);
+    background-repeat: repeat;
 }
 
 .guessthenumber {
-    background-color:pink;
+    background-color: rgb(107, 209, 240);
+    border-radius: 25px;
+    border: 2px solid black;
+    text-align:center;
+    font-size:20pt;
 }
 
 .scorecount {
-    background-color:blue;
+    background-color: rgb(107, 209, 240);
+    border-radius: 25px;
+    border: 2px solid black;
 }
 
 .crystals {
@@ -26,27 +39,19 @@ body {
     padding-bottom:10px;
 }
 
-#gem1 {
-
-}
-
-#gem2 {
-
-}
-
-#gem3 {
-
-}
-
-#gem4 {
-
-}
-
 .yournumber {
-    background-color:aquamarine;
+    text-align:center;
+    background-color: rgb(107, 209, 240);
+    border-radius: 25px;
+    border: 2px solid black;
 }
 
-#yourNumber {
-
+.yournumberfont {
+    font-size:20pt;
+    color:#000000;
 }
 
+.vertical-center {
+
+    align-items: center;
+  }

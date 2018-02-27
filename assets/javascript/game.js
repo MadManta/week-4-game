@@ -8,40 +8,104 @@ var losses = 0;
 // Gem Counter
 var yourNumber = 0;
 
-//
+// Random Number Exists in Global
+
+var guessTheNumber;
+
+// Boolean for game running
+
+var isRunning = false;
+
+// Function to start game
+
 $("#gem1").on("click", function() {
-    yourNumber += 5;
-    $("yourNumber").text(yourNumber);
+    yourNumber += number1;
+    $("#yourNumber").html(yourNumber);
+    guessCheck();
 });
 
 $("#gem2").on("click", function() {
-    yourNumber += 1;
-    $("yourNumber").text(yourNumber);
+    yourNumber += number2;
+    $("#yourNumber").html(yourNumber);
+    guessCheck();
 });
 
 $("#gem3").on("click", function() {
-    yourNumber += 4;
-    $("yourNumber").text(yourNumber);
+    yourNumber += number3;
+    $("#yourNumber").html(yourNumber);
+    guessCheck();
 });
 
 $("#gem4").on("click", function() {
-    yourNumber += 8;
-    $("yourNumber").text(yourNumber);
+    yourNumber += number4;
+    $("#yourNumber").html(yourNumber);
+    guessCheck();
 });
 
-// The number that is randomly generated for each game
-var guessTheNumber = Math.floor(Math.random() * Math.floor(50));
 
-$("#guessTheNumber").text(guessTheNumber)
+function start() {
 
-if (yourNumber === guessTheNumber) {
-    wins++;
-    alert("you win!");
-    };
+// Reset Numbers
 
-// Resetting the game when you go over guessTheNumber
-function loseReset() {
-    losses++;
+guessTheNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+
+$("#theNumber").html(guessTheNumber)
+
+yourNumber = 0;
+$("#yourNumber").html(yourNumber)
+
+// Gem Numbers
+
+number1 = Math.floor(Math.random() * (3 - 1 + 1) + 1);
+number2 = Math.floor(Math.random() * (6 - 4 + 1) + 4);
+number3 = Math.floor(Math.random() * (9 - 7 + 1) + 7);
+number4 = Math.floor(Math.random() * (12 - 10 + 1) + 10);
+
+//
+
+
 };
 
+// The number that is randomly generated for each game
 
+function guessCheck() {
+    if (guessTheNumber === yourNumber) {
+        wins++;
+        alert("you win!");
+        $("#wins").text(wins);
+        guessTheNumber = 0;
+        yourNumber = 0;
+        $("#yourNumber").text(yourNumber);
+        number1 = 0;
+        number2 = 0;
+        number3 = 0;
+        number4 = 0;
+        start();
+        }
+    else if (yourNumber > guessTheNumber) {
+        losses++;
+        alert("you lose!");
+        $("#losses").text(losses);
+        guessTheNumber = 0;
+        yourNumber = 0;
+        $("#yourNumber").text(yourNumber);
+        number1 = 0;
+        number2 = 0;
+        number3 = 0;
+        number4 = 0;
+        start();
+    }
+    else {
+
+    };
+};
+
+document.onkeydown = function(press) {
+    var letter = String.fromCharCode(press.which).toLowerCase();
+      if (letter == "s") {
+        if (isRunning === false) {
+            isRunning = true;
+            start();
+        }
+      }
+    };

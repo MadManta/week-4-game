@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CRYSTAL COUNTER</title>
+    <title>GEM GUESSER</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 <body>
-  
+  <br><br>
     <!-- wrapper -->
     <div class="container mx-auto">
 
         <!-- game title -->
         <div class="row">
-            <div class="col-lg-12 header">Gem Collector</div>
+            <div class="col-lg-12 header">Gem Guesser</div>
         </div>
+           <!-- spacer -->
+           <div class="row">
+                <div class="col-lg-12"><br><br></div>
+            </div>
 
         <!-- game information -->
         <div class="row">
-            <div class="col-lg-12 information">Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game InInformation about how to play this game Information about how to play this game Information about how to play this game Information about how to play this game formation about how to play this game </div>
+            <div class="col-sm-1"></div>
+            <div class="col-lg-10 information">
+                <p><h1><center>PRESS "S" TO <b>S</b>TART!</center></h1></p>
+                <p>This is the GEM GUESSER game! Each one of the four "gems" holds a certain random number (the first gem is lowest, the last gem is highest, but the numbers are random). You will have a target number to reach each time the game is played. Each time you click a gem, your own number will go up, until you either reach the target, or go over and lose! When you win or lose, a new number will appear for you to guess, and the gems will have different values!</p>
+                <p>Have fun!</p>
+                <p><h1><center>PRESS "S" TO <b>S</b>TART!</center></h1></p>
+            </div>
+            <div class="col-sm-1"></div>
         </div>
 
+        <!-- spacer -->
+        <div class="row">
+            <div class="col-lg-12"><br><br></div>
+        </div>
         <!-- random number and current score cards-->
         <div class="row">
-            <div class="col-sm-3 guessthenumber">
-                <span id="guessTheNumber">NUMBER TO GUESS</span>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3 guessthenumber vertical-center">
+                <span id="theNumber">NUMBER TO GUESS</span>
             </div>
             <div class="col-sm-3 scorecount">
                 <p>WINS: <span id="wins"></span></p>
                 <p>LOSSES: <span id="losses"></span></p>
             </div>
-            <div class="col-med-6"></div>
+            <div class="col-med-3"></div>
         </div>
 
         <!-- interactive crystals -->
-        <div class="row">
+        <div class="row p-3">
+            <div class="col-sm-2"></div>
             <div class="col-sm-2">
                 <div class="crystals"><img src="assets/images/gem1.png" class="img-fluid" id="gem1"></div>
             </div>
@@ -47,15 +64,17 @@
             <div class="col-sm-2">
                 <div class="crystals"><img src="assets/images/gem4.png" class="img-fluid" id="gem4"></div>
             </div>
-            <div class="col-lg-4"></div>
+            <div class="col-sm-2"></div>
         </div>
 
         <!-- number counter -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-sm-3"></div>
+            <div class="col-lg-6 yournumber">
                 <p>Your current number guess is...</p>
-                <span id="yourNumber">number</span>
+                <span id="yourNumber" class="yournumberfont"></span>
             </div>
+            <div class="col-sm-3"></div>
         </div>
 
     </div>
